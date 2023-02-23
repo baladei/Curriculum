@@ -3,12 +3,12 @@ import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMysql, DiReact } from 'rea
 import '../styles/components/tecnologies.sass'
 
 const tecnologiesContainer = [
-  { id: "html", name: "HTML5", icon: <DiHtml5 /> },
-  { id: "css", name: "CSS3", icon: <DiCss3 /> },
-  { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
-  { id: "node", name: "Node.js", icon: <DiNodejsSmall /> },
-  { id: "mysql", name: "MySQL", icon: <DiMysql /> },
-  { id: "react", name: "React", icon: <DiReact /> },
+  { id: "html", name: "HTML5", icon: <DiHtml5 />, sobre: "Sei sobre HTML" },
+  { id: "css", name: "CSS3", icon: <DiCss3 />, sobre: "Sei sobre CSS" },
+  { id: "js", name: "JavaScript", icon: <DiJsBadge />, sobre: "Sei sobre JS" },
+  { id: "node", name: "Node.js", icon: <DiNodejsSmall />, sobre: "Sei sobre Node"},
+  { id: "mysql", name: "MySQL", icon: <DiMysql />, sobre: "Sei sobre MySQL" },
+  { id: "react", name: "React", icon: <DiReact />, sobre: "Sei sobre React" },
 ]
 
 export const Tecnologies = () => {
@@ -21,7 +21,7 @@ export const Tecnologies = () => {
             {tech.icon}
             <div className="tecnology-info">
               <h3>{tech.name}</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>{tech.sobre}</p>
             </div>
           </div>
         ))}
